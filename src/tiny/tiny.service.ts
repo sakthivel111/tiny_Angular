@@ -15,7 +15,6 @@ export class TinyService {
   async postData(data) {
     console.log("ssssssssssssssssssssssssssssssssssss service",data)
     let multipleArray=data
-    
     let saveData = await this.tinyRepository.save(multipleArray);
     if (saveData) {
       return { status: true, message: 'Tine document data add successfuly' };
